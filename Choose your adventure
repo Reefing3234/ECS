@@ -1,0 +1,132 @@
+//variables
+int introChoice, middleChoice1, middleChoice2, middleChoice3;
+string_t traveler1;
+string_t traveler2;
+
+//6 functions
+
+
+
+
+
+
+
+//start of te journey 
+void intro(){
+    printf("Ah greetings ", traveler1, " and ", traveler2, ", welcome to Reef’s maze, sorry about the dirtiness of this place, haven’t had any visitors in a long time….in any case, you both fell down here from that hole up there, surprised no one decided to put warnings around this cursed mountain. I do know a pathway back up if you wish to return. Or you may stay with me here until someone from above tries to look for you two. Choose which option you want.");
+    printf("\n[Option 1] Follow the stranger in the hopes of escaping the mountain. After all, he can’t possibly hurt you and your friend, right?\n[Option 2] Stay behind and wait for someone from the surface to find you both. He seems friendly, and he radiates a sort of peaceful aura around him that makes you and your friend feel comfortable and at ease next to him.\n[Option 3] Choose the more dangerous option and venture out yourself when he is not looking. Ignore his two options and venture out when he is busy with something\n");
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+//Option 1 and endings 1-3
+void middle1(){
+    printf("You, your friend and the stranger come across three different pathways, one being covered in vines, another being covered in moss, and the third being relatively clean, you and your friend are told that each pathway leads to a different exit. Please choose the pathway you wish to go.\n");
+    printf("1. Vines, 2. Moss, 3. Clean\n");
+    scanf("%i", &middleChoice1);
+    while(middleChoice1 != 1 && middleChoice1 != 2 && middleChoice1 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice1);
+    }
+}
+
+void end1(){
+    printf("You and your friend chose to follow him through the vine pathway in hopes of escaping the mountain. He leads you through a twisting and looping path with seemingly no end in sight. After walking for what seemed to be hours, you, your friend, and the stranger reach a rather massive, vine covered, wood and stone door, one that he pushed open as a cool breeze brushed against your faces. “I’m apologize this took so long, my maze rotates often and it gets rather confusing to move about in it, even for someone like me. This is where we part children, can’t stay here for long after all.” The figure gently pushed you two out as you walked away, turning around to say ‘thank you’ only to see the door was gone, like it never existed in the first place. Congratulations, you and your friend have escaped the maze, you have unlocked the good ending, would you like to try your chances for another adventure?\n");
+    exit (1);
+}
+void end2(){
+    printf("You and your friend chose to follow him through the mossy pathway, hoping to escape the mountain and maze as he nods, turning around and leading you both through the maze. During the walk, he teaches you and your friend about the past of the maze, which interested you, but not your friend. As you listened more, you did not notice your friend starting to fall behind as the pathway changed, eventually, you realize your friend is no longer behind you, confused, you turn to the man to ask a question, only for a knife to go through your shoulder as you fell to the ground, paralysed. “I’m a bit disappointed you didn’t realize your friend was gone sooner, but I suppose that is the work of melody charm, isn’t it? I’m sorry for this, please forgive me young one.” You look up, terrified as he raises a large cleaver and brings it down onto you. You have died while your friend is most likely dead as well, you have unlocked the bad ending, would you like to try your chances for another adventure?\n");
+    exit(1);
+}
+void end3(){
+    printf("You and your friend follow the man through the clean pathway of the maze and encounter what seems to be some sort of large blob like monster that screamed all sorts of wrong. He orders you both to stay back as he grabbed an absurdly large cleaver from somewhere, spinning it around with grace as he pointed the weapon at the creature, silently staring at it as his eyes glow a faint and soft red. Much to your surprise and curiosity, the creature backed off from the man and slinked away to the shadows, the man giving a low sigh as he spun the cleaver and put it on his back, muttering something about dinosaurs and their experiments as he guided you and your friend through the maze, encountering a few more of the monsters as he warned them away, however, the monsters did not seem to deter themselves as some would constantly come back, forcing the man to use the weapon and cut them apart when they started getting too close. Eventually, you reach a large gate that you two exit through, just as you both hear a voice yelling his name from behind as the doors closed. You and your friend have escaped the maze with minor injuries, you have unlocked the neutral ending, would you like to try your chances for another adventure?\n");
+    exit(1);
+}
+//Option 2 and endings 4-6
+void middle2(){
+    printf("You and your friend decide to stay with the person, making him smile as he gestured for you two to follow him as he revealed his name to be Reefing, the keeper of the maze. Being led to a rather nice and comfortable house, he gives you three choices.\n");
+     printf("1. Get something to eat, 2. Go sleep, 3. Wander around\n");
+    scanf("%i", &middleChoice2);
+    while(middleChoice2 != 1 && middleChoice2 != 2 && middleChoice2 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice2);
+    }
+}
+void end4(){
+    printf("You and your friend haven’t eaten in a while, so you both decide to ask for something to eat, he leads you both to a rather large kitchen as he starts to make something from relatively large slabs of meat, using a knife as he easily and effortlessly cut through the slabs and used something to float the pieces of meat into a pot that hung over a unl-correction, make that a very lit fireplace. You and your friend watch, slightly memorized by his actions as he looked to be gliding across the floor to create something that smelled heavenly. Your friend asked what he was making, to which Reefing replied that he was making a basic pork stew with carrots, potatoes, herbs, and spices as he reached a hand out, somehow making a wooden bowl float over as he picked a few herbs out and threw them into the boiling pot alongside carrots and potatoes. After waiting for a little while longer, he takes three bowls to the table and serves them, one for you and your friend, and one for him. As the three of you eat, Reefing begins to explain the past of the maze, as well as what got him and his fellow monsters trapped under the mountain. Curious, you ask why he considers himself to be a monster when he clearly looked like a human, only to watch him smirk slightly as he held his fingers up and snapped them, fox ears and tails appearing on his body, he looked at you lazily, asking if this satisfies your question. It does and you return to your delicious stew. As you finished eating, Reefing picked up your bowls and placed them into the sink, a clone materializing next to him as it went to clean the bowls as he guided you deeper into the house, reaching a pair of bedrooms as you and your friend climbed onto separate beds, Reefing bidding you good night as you fall into a easy slumber, distantly, you wonder how life would be down here if you stayed. By choosing to stay and eat, you have gained more information about the maze and the keeper. You have unlocked the New Home ending.\n");
+    exit(1);
+}
+void end5(){
+    printf("You and your friend ask for a place to sleep, to which he obliges by leading you two into a bedroom as you climb onto your bed, closing your eyes as you fall into a dreamless sleep. You’re not sure how much time has passed since you went to sleep, but you felt something grabbing you by the leg and attempt to pull you down, opening your eyes, your eyes widen when you saw some sort of creature, trying to drag you down, you also realize it did not have legs as the smell of fresh blood hit your senses, making you cover your nose and scream as the creature gave a roar, only for it’s head to suddenly be cleaved apart by a elegant sword, Reefing scowling slightly as he was covered in blood. “My home is compromised, the undead are coming. We need to leave. Now.” Without wasting any time, you were wrapped around his tails alongside your friend who was also woken by your screaming. Reefing walked down the stairs as more creatures appeared, all being sliced apart seamlessly as Reefing cut bloody swathes through them with the sword and what can only be described as a massive kitchen knife. It was twice as large and tall as you were! “I swear. These accursed things know where I’m always at, no matter where I am.” Reefing grumbled as he kicked a creature in the chest, launching them through the window as he jumped after them, casually slicing their head off as he took off into the maze with you and your friend. “Odd….these things usually aren’t active unless…..damnit…..I trusted you too.” Reefing looked to the side as he gazed at something that you couldn’t see. Several more creatures appeared in front of him as your friend shouted a warning, Reefing reacting faster than your eyes could see as flashes of silver were spotted, heads flying off while blood sprayed the air. “Hold on kids, this is going to be a bumpy ride.” Reefing suddenly bolted forward, his tails encompassing you and your friend entirely as you heard the sounds of swords striking and cutting flesh as well as the sound of those creature’s dying. You also realize you heard the faint sounds of….water? Wait, how far did he even go!? “We should be safe here….at least for now. We’ll have to wait out these patrols and return to the maze……” Reefing gave a sigh as he looked at you and your friend “We’ll need to keep a low profile for a while until I can find a pathway through their rotations.” Reefing let you two onto the coarse and rough dirt as he helped guide you through the area, eventually reaching a trap door which he opened and herded you and your friend inside, entering it as he shut the trap door behind him, walking down the stairs. “Ugh, this is going to be a pain in the ass……sigh I’ll keep you two protected until I can safely get you two to the surface. Reefing saves you and your friend from the unknown creatures, escorting you two to a relatively unknown place with the promises to protect you and help you escape. You have unlocked the Fox Guardian ending.\n");
+    exit(1);
+}
+void end6(){
+    printf("You and your friend wander around, Reefing staying back as he opted to make some dinner for you both. As you and your friend walked deeper in, you find odd inscriptions on the walls and ceiling. Curious, you go over and try to read them, only to be puzzled by the oddest of handwriting that was written in……hands? Interesting. You turn around to ask your friend, only to stop as your friend is nowhere in sight. Vaguely, you hear whispers behind and turn around, only to see nothing. Feeling uneasy you turn to go back to the house, calling your friend all the way. As you reach the house, you notice more of the odd writing on parts of the walls, opening the door, you enter the building, calling out for Reefing as you stop in front of the hallway, eyes widening when you saw some…..blob of sorts there as they looked up, a creepy smile warping on it’s face as it’s white pupils shone from the empty eye sockets as he suddenly appeared in front of you, speaking something as you felt the hairs on your back start to crawl….until you were snapped out of it by someone shaking you, prompting a quick reaction as you turned and smacked the person, your friend recoiling from the sudden strike, looking very baffled as Reefing looked down at you, concerned. “Are you alright?" , traveler2 , "came running back thirty minutes ago, saying that you just stopped moving suddenly and stared at this wall.”. You look around, realizing you were still standing in the same area where you first saw the handwriting, except it was no longer there. “Come on, let’s head back. We can talk later.” Reefing guided you and your friend away, turning back for a split second and then looking forward as you clutched your hands, feeling a odd vibration from them. By wandering outwards, you have stumbled across some form of odd handwriting by an unknown entity and was promptly given a jumpscare by said figure, snapping out of it as you are led back to the house. You have unlocked the W.D ending.");
+    exit(1);
+}
+//Option 3 and endings 7-9
+void middle3(){
+    printf("You and your friend opt to take the more dangerous route, following him to his house as he went off to prepare something. You and your friend look at each other, giving a nod as you both run away from the house and reenter the maze, seeing three different pathways..\n");
+     printf("1. Crystal, 2. Volcanic, 3. Sandy\n");
+    scanf("%i", &middleChoice3);
+    while(middleChoice3 != 1 && middleChoice3 != 2 && middleChoice3 != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &middleChoice3);
+    }
+}
+void end7(){
+    printf("You and your friend take the crystal path, carefully and slowly going through the pathway as you gain some minor injuries from slipping on some particularly smooth crystal blocks and areas and giving yourself light scrapes and cuts. As you wander deeper into the crystal maze with your friend, you begin to come across what looked to be dried splotches of blood, which meant that there were people who came through here before. Whether they made it out or not was up in the air, however. You and your friend continue to trek through the crystals, avoiding possible creatures and monsters as you reach a massive crystal door with the roman numerals of IV. Without waiting, your friend rushes to the door and tries to push it open, only to get repulsed backwards as a golem appears in front of you and your friend, raising a glimmering hand as it spoke in a deep and rumbling voice “Runner’s detected. Beginning crystallization now.” The golem raised it’s hands to crush you and your friend, both of you quickly rolling away to avoid the arms as the crystals exploded outwards, pelting you and your friend as the crystals rapidly grew, trapping you and your friend. Despite your efforts, the crystal golem was able to imprison you and your friend by manipulating the area around the both of you. You have unlocked the crystalized ending.\n");
+    exit(1);
+}
+void end8(){
+    printf("You and your friend decide to take a more ridiculous path, choosing the volcanic option as you both navigated the hazardous area, watching your step as magma exploded from below while lava trickled in from various directions, streaming to an exit as you and your friend eventually reached a volcanic rock door. You and your friend check for traps and any nearby creatures or monsters. After making sure the coast was clear, your friend goes to push the door open, only to pull back, shaking their hands as steam wafts off their now red hands. You felt a bit stupid at this moment, realizing a door in the middle of a volcanic area would most likely be extremely hot. The floor underneath you and your friend suddenly cracked, alarming you and your friend as it shattered, the door floating in the air as you plummeted into the raging lava. By taking the volcanic route, you and your friend have succumbed to the irregular area of the volcanic zones. You have completed the hot pitfall ending.\n");
+    exit(1);
+}
+void end9(){
+    printf("You and your friend take the sandy path, walking through it as you trudged through the rough sand, your friend grumbling slightly as sand started to get stuck into your shoes. Thankfully, you had brought your phone with you as you lit up the slightly dark corridor with the light. As you walk deeper into the area, you felt the odd sensation of something or someone watching your back as a terrible feeling started to crawl up your back, your friend obviously feeling the effects as well as your leg hit something hard, looking down, you freeze as you see a human skull in the sand, instantly looking around with the flashlight as several more bones were spotted in the surrounding sand, all human. The feeling on your back intensified as you and your friend ignored stealth, choosing to run through the pathway as the sound of something skittering behind you was heard, making you run even faster as adrenaline pumped through your body. You and your friend eventually reached the door as you two slammed into it, pushing through it as you both collapsed to the ground in shock, the door closing behind you as it vanished from existence. You have successfully escaped the maze due to the adrenaline boost as well as the fear within you of becoming like the other humans. You have unlocked the breakdown and run away ending.\n");
+    exit(1);
+}
+int main(){  //main program to run (logic)
+    printf("Hello there, what are your names?\n");
+    scanf("%s ", &traveler1, &traveler2);
+    intro();
+    if(introChoice == 1){
+        middle1();
+        if (middleChoice1 == 1){
+            end1();
+        }
+        if (middleChoice1 == 2){
+            end2();
+        }
+        if (middleChoice1 == 3){
+            end3();
+        }
+        
+    }
+    if(introChoice == 2){
+     middle2();
+        if (middleChoice2 == 1){
+            end4();
+        }
+        if (middleChoice2 == 2){
+            end5();
+        }
+        if (middleChoice2 == 3){
+            end6();
+        }
+    }
+    if(introChoice == 3){
+    middle3();
+        if (middleChoice3 == 1){
+            end7();
+        }
+        if (middleChoice3 == 2){
+            end8();
+        }
+        if (middleChoice3 == 3){
+            end9();
+        }
+    }
+}
