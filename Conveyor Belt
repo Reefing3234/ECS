@@ -1,0 +1,11 @@
+#include <linkbot.h>
+CLinkbotI robot1, robot2, robot3;
+
+double radius = 1.75;      // radius of 1.75 inches 
+double trackwidth = 3.69;  // the track width, the distance between two wheels
+
+robot1.driveDistance(8, radius);
+robot1.driveDistance(-7, radius);
+robot2.driveDistance(22, radius);
+robot2.driveDistance(-5, radius);
+robot3.driveDistance(16, radius);
